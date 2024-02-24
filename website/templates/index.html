@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome to Sentiment Analysis:<br>Uncover Emotions Behind Words</h1>
+        <p>Discover the essence of language with Sentiment Analysis. Explore the intricate emotions from a keyword, unveiling the true sentiment behind every word.</p>
+        <div class="search">
+            <form action="{{ url_for('main.sentiment') }}" method="post">
+                <input type="text" name="query" placeholder="Enter a keyword"><button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
