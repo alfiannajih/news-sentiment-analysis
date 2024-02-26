@@ -43,7 +43,7 @@ body {
     color: black;
 }
 
-.header a.active {
+.active {
     background-color: #F7F7FF;
     color: #091E39;
     font-weight: bold;
@@ -52,13 +52,16 @@ body {
 main {
     padding: 0;
     height: 50%;
-    margin-block: 25vh;
 }
 
 .container {
     text-align: center;
     width: 40%;
     margin-inline: auto;
+}
+
+.container-home {
+    margin-block: 25vh;
 }
 
 .container h1 {
@@ -119,4 +122,14 @@ footer a svg {
 
 footer a {
     text-decoration: none;
+}
+
+.container-about {
+    padding-block: 10vh;
+}
+
+.about img {
+    width: 225px;
+    border-radius: 100%;
+    padding-bottom: 25px;
 }
